@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundcornerbuilder"
+
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:src="@drawable/avatar_round" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_toEndOf="@id/image"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="Name"
+        />
+
+    <TextView
+        android:id="@+id/txtRank"
+        android:layout_toEndOf="@id/image"
+        android:layout_marginStart="30dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:text="Rank"
+        android:textColor="#CCCCCC" />
+
+    <TextView
+        android:id="@+id/txtRankNum"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_toEndOf="@id/image"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRank"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_toEndOf="@id/txtRank"
+        android:layout_marginStart="30dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:text="Score"
+        android:textColor="#CCCCCC" />
+
+    <TextView
+        android:id="@+id/txtScoreNum"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_toEndOf="@id/txtRankNum"
+        android:layout_marginStart="67dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtScore"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:text="" />
+
+</RelativeLayout>

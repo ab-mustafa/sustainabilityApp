@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title=""
+        android:icon="@drawable/homeicon"
+        android:id="@+id/home"/>
+    <item android:title=""
+        android:icon="@drawable/calendaricon"
+        android:id="@+id/calender"/>
+    <item android:title=""
+        android:icon="@drawable/linechart"
+        android:id="@+id/scoreboard"/>
+    <item android:title=""
+        android:icon="@drawable/tippingicon"
+        android:id="@+id/tips"/>
+    <item android:title=""
+        android:icon="@drawable/settingicon"
+        android:id="@+id/setting"/></menu>

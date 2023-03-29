@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "shortName": "abdallah",
+      "fullName": "Abdallah Mustafa",
+      "password": "1234",
+      "currentScore": 690,
+      "submittedDates": ["12/12/2022","13/12/2022"],
+      "PublicAccount": false,
+      "NotificationTime": "11:00"
+    },
+    {
+      "shortName": "john",
+      "fullName": "John Smith",
+      "password": "4321",
+      "currentScore": 723,
+      "submittedDates": ["22/2/2023","24/2/2023"],
+      "PublicAccount": true,
+      "NotificationTime": "17:00"
+    },
+    {
+      "shortName": "Reza",
+      "fullName": "Reza Ghorbani",
+      "password": "4321",
+      "currentScore": 1000,
+      "submittedDates": ["12/12/2022","13/12/2022"],
+      "PublicAccount": true,
+      "NotificationTime": "20:00"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="411dp"
+        android:layout_height="200dp"
+        android:scaleX="1.28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+
+        app:srcCompat="@drawable/setting_top_page" />
+
+    <ImageView
+        android:id="@+id/imageSetting1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/setting1background" />
+
+    <ImageView
+        android:id="@+id/imageSetting2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSetting1"
+        app:srcCompat="@drawable/setting2background" />
+
+    <Switch
+        android:id="@+id/switchPublicAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSetting1"
+        app:layout_constraintEnd_toEndOf="@id/imageSetting1"
+        app:layout_constraintStart_toStartOf="@id/imageSetting1"
+        app:layout_constraintTop_toTopOf="@id/imageSetting1"
+        android:layout_marginStart="260dp"
+
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/notifSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSetting2"
+        app:layout_constraintEnd_toEndOf="@+id/imageSetting2"
+        app:layout_constraintStart_toStartOf="@+id/imageSetting2"
+        app:layout_constraintTop_toTopOf="@+id/imageSetting2"
+        android:layout_marginStart="260dp"
+
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textSettingTopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:text="Setting"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textSetting1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:elevation="2dp"
+        android:text="Account Setting"
+        android:textColor="#BDBDBD"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSetting1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageSetting1" />
+
+    <TextView
+        android:id="@+id/textPublicAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="235dp"
+        android:elevation="2dp"
+        android:text="Public account"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSetting1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageSetting1" />
+
+    <TextView
+        android:id="@+id/textSetting2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-215dp"
+        android:layout_marginBottom="155dp"
+        android:elevation="2dp"
+        android:text="Notification Setting"
+        android:textColor="#BDBDBD"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSetting2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageSetting2" />
+
+    <TextView
+        android:id="@+id/textNotifSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="235dp"
+        android:layout_marginBottom="90dp"
+        android:elevation="2dp"
+        android:text="Notification sound"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSetting2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageSetting2"
+        app:layout_constraintTop_toTopOf="@+id/imageSetting2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setNotTime"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="-100dp"
+        android:background="@drawable/roundcornerbuilder2"
+        android:elevation="2dp"
+        android:src="@drawable/notif_time_button"
+        android:text="set notification time"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSetting2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageSetting2" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:menu="@menu/button_nav_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

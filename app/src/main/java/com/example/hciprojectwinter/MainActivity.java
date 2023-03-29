@@ -4,22 +4,26 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+import java.io.File;
 
 public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //Save IP Address for the server
-        SharedPreferences prefs = getPreferences(Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putString("server_ip_address", "192.168.0.16");
-        editor.putString("server_port", "5000");
-        editor.apply();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcom_page);
         Log.d("lifecycle","onCreate invoked");
+
+
     }
     @Override
     protected void onStart() {
@@ -53,8 +57,6 @@ public class MainActivity extends Activity {
     }
     public void moveToLoginPage(View view){
         Intent intent = new Intent(this, loginPage.class);
-        //intent.putExtra("shortName", getShortName);
-        //intent.putExtra("password", getPassword);
         startActivity(intent);
     }
 }
